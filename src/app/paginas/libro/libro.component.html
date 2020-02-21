@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col-md-6">
+        <ul class="list-group">
+            <li *ngFor="let libro of libros" class="list-group-item ">
+                <span>{{ libro.id }}</span>{{ libro.nombre }}
+                <a [routerLink]="['/libro/', libro.id]">Ver Detalle</a>
+            </li>
+        </ul>
+    </div>
+</div>
